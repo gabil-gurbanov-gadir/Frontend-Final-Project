@@ -1,0 +1,27 @@
+header.wwdHeader {
+    height: 480px;
+    padding: 0 0 70px;
+    position: relative;
+    width: 100%;
+    .wwd_BG {
+        background: linear-gradient( 0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    }
+    .wwd_BGI {
+        background-image: url(/assets/images/we_do_bg.jpeg);
+    }
+    .wwdHead {
+        height: 100%;
+        div {
+            height: 100%;
+        }
+        &__h2 {
+            h2 {
+                color: white;
+            }
+        }
+    }
+}
+
+.nese {
+    height: 4000px;
+}

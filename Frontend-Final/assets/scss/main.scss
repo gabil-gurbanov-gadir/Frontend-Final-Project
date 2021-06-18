@@ -9,6 +9,13 @@
 // Mixins
 @import "./mixins/border";
 @import "./mixins/flexbox";
+//Others
+@import "./others/default";
+@import "./others/common";
 // Pages
 @import "./pages/index";
 @import "./pages/what-we-do";
+//Others
+@import "./others/keyframes";
+//Responsives
+@import "./responsives/media";

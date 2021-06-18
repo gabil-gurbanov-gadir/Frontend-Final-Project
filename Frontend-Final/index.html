@@ -11,14 +11,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/fonts/fonts.css">
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 
 <body>
 
+    <!-- Start ASIDE NAV -->
     <div class="aside-nav animate__animated d-none">
         <div class="aside-nav__menu-wrapper">
-            <ul class="list-group m-0">
+            <ul class="list-group">
                 <li class="list-group-item">
                     <a href="" class="to_what_we_do">
                         What we do
@@ -52,15 +53,23 @@
             </ul>
         </div>
     </div>
+    <!-- End ASIDE NAV -->
+
+    <!-- ========== HEADER START ========== -->
     <header class="header">
+        <!-- Start BGROUND -->
         <section id="bg" class="bground">
-            <div class="bground__bg"></div>
-            <div class="bground__bgImage"></div>
+            <div class="indexBG bground__bg"></div>
+            <div class="indexBGI bground__bgImage"></div>
         </section>
+        <!-- End BGROUND -->
+        <!-- ================================ -->
+
+        <!-- Start NAV -->
         <section id="nav">
             <div class="my-container">
                 <div class="nav d-flex justify-content-between align-items-center">
-                    <div class="col-lg-4 nav__logo">
+                    <div class="col-lg-4 nav__logo logo">
                         <a href="#"></a>
                     </div>
                     <div class="col-xl-5 col-lg-6 nav__nav-list me-3">
@@ -92,6 +101,10 @@
                 </div>
             </div>
         </section>
+        <!-- End NAV -->
+        <!-- ================================ -->
+
+        <!-- Start FIRST -->
         <section id="index_first" class="home">
             <div class="my-container">
                 <div class="home__info">
@@ -102,6 +115,10 @@
                 </div>
             </div>
         </section>
+        <!-- End FIRST -->
+        <!-- ================================ -->
+
+        <!-- Start SCROLL -->
         <section id="scroll">
             <div class="my-container">
                 <div class="scroll">
@@ -111,18 +128,27 @@
                 </div>
             </div>
         </section>
+        <!-- End SCROLL -->
+        <!-- ================================ -->
     </header>
+    <!-- ========== HEADER END ========== -->
+
+    <!-- ========== MAIN START ========== -->
     <main class="position-relative">
+
+        <!-- Start WHAT WE DO -->
         <section id="what_we_do" class="what-we-do scrolling" data-aos-duration="1000" data-aos="fade-up" data-aos-offset="150">
             <div class="my-container">
                 <div class="row ">
                     <div class="col-12 what-we-do__header">
-                        <div class="row justify-content-between align-items-center m-0">
+                        <div class="row justify-content-between align-items-center">
                             <div class="col-12 col-sm-6">
-                                <h2 class="what-we-do__h2 m-0">What we do</h2>
+                                <h2 class="what-we-do__h2 headerH2">What we do</h2>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-3 what-we-do__link d-flex justify-content-end">
-                                <a class="what-we-do__button m-0">Read more <span></span></a>
+                            <div class="col-12 col-sm-6 col-lg-3 link d-flex justify-content-end">
+                                <a href="what-we-do.html">
+                                    Read more
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -132,10 +158,10 @@
                         <div class="what-we-do__wrapper__item__image">
                             <img src="/assets/images/1.svg" alt="1">
                         </div>
-                        <h3 class="what-we-do__wrapper__item__h3 m-0">
+                        <h3 class="what-we-do__wrapper__item__h3">
                             AI & ML based scoring
                         </h3>
-                        <p class="what-we-do__wrapper__item__p m-0">
+                        <p class="what-we-do__wrapper__item__p">
                             We determine the credit-worthiness of each client, using behavioral scoring model.
                         </p>
                     </a>
@@ -143,10 +169,10 @@
                         <div class="what-we-do__wrapper__item__image">
                             <img src="/assets/images/2_1.svg" alt="2_1">
                         </div>
-                        <h3 class="what-we-do__wrapper__item__h3 m-0">
+                        <h3 class="what-we-do__wrapper__item__h3">
                             Micro-lending technology
                         </h3>
-                        <p class="what-we-do__wrapper__item__p m-0">
+                        <p class="what-we-do__wrapper__item__p">
                             We deliver microlending solution which includes processing, disbursement, repayment, recovery and management of loans.
                         </p>
                     </a>
@@ -154,16 +180,20 @@
                         <div class="what-we-do__wrapper__item__image">
                             <img src="/assets/images/3-1.svg" alt="3-1">
                         </div>
-                        <h3 class="what-we-do__wrapper__item__h3 m-0">
+                        <h3 class="what-we-do__wrapper__item__h3">
                             Big data engine
                         </h3>
-                        <p class="what-we-do__wrapper__item__p m-0">
+                        <p class="what-we-do__wrapper__item__p">
                             We use latest advancements in Artificial Intelligence and Machine Learning to maximize our value proposition.
                         </p>
                     </a>
                 </div>
             </div>
         </section>
+        <!-- End WHAT WE DO -->
+        <!-- ================================ -->
+
+        <!-- Start SOLUTION -->
         <section id="index-solution" class="index-solutions">
             <div class="index-solutions__wrapper d-flex">
                 <div class="index-solutions__wrapper__header d-flex justify-content-center align-items-center" data-aos="fade-right" data-aos-offset="50" data-aos-duration="1000" data-aos-delay="100">
@@ -172,7 +202,7 @@
                     </h2>
                 </div>
                 <div class="index-solutions__wrapper__list d-flex justify-content-center align-items-center" data-aos="fade-down" data-aos-offset="50" data-aos-duration="800" data-aos-delay="100">
-                    <ul class="index-solutions__wrapper__list__ul m-0">
+                    <ul class="index-solutions__wrapper__list__ul">
                         <li>AI and ML based scoring engine
                         </li>
                         <li>
@@ -186,10 +216,14 @@
                 </div>
             </div>
         </section>
+        <!-- End SOLUTION -->
+        <!-- ================================ -->
+
+        <!-- Start ACHIEVEMENTS -->
         <section id="achievements" class="achievements scrolling">
             <div class="my-container">
                 <div class="achievements__wrapper">
-                    <h2 class="achievements__wrapper__h2">
+                    <h2 class="achievements__wrapper__h2 headerH2">
                         Enhance your opportunities with us
                     </h2>
                     <div class="achievements__wrapper__contents d-flex justify-content-between">
@@ -223,6 +257,10 @@
                 </div>
             </div>
         </section>
+        <!-- End ACHIEVEMENTS -->
+        <!-- ================================ -->
+
+        <!-- Start MAP -->
         <section id="index_world" class="index-world">
             <div class="index-world__map">
                 <div class="index-world__map__svg">
@@ -2689,7 +2727,7 @@
                     <span></span>
                 </div>
                 <div class="index-world__map__inner">
-                    <h2>Simbrella Geography</h2>
+                    <h2 class="headerH2">Simbrella Geography</h2>
                 </div>
                 <div class="index-world__map__operators">
                     <p class="orange"><span>Current operations</span></p>
@@ -2698,10 +2736,14 @@
                 </div>
             </div>
         </section>
+        <!-- End MAP -->
+        <!-- ================================ -->
+
+        <!-- Start MOBILE MAP -->
         <section id="index_world_mobile" class="index-world-mobile d-none">
             <div class="my-container">
                 <div class="index-world-mobile__wrapper">
-                    <h2 class="index-world-mobile__wrapper__h2">
+                    <h2 class="index-world-mobile__wrapper__h2 headerH2">
                         Simbrella Geography
                     </h2>
                     <div class="index-world-mobile__wrapper__map">
@@ -2802,11 +2844,14 @@
                     </div>
                 </div>
             </div>
-
         </section>
+        <!-- End MOBILE MAP -->
+        <!-- ================================ -->
+
+        <!-- Start PARTNERS -->
         <section id="partners" class="partners" data-aos-duration="1000" data-aos="fade-up" data-aos-offset="50">
             <div class="my-container">
-                <h2 class="partners__h2 m-0">
+                <h2 class="partners__h2 headerH2">
                     Our clients
                 </h2>
                 <div class="partners__table d-flex justify-content-between flex-wrap">
@@ -2849,10 +2894,14 @@
                 </div>
             </div>
         </section>
+        <!-- End PARTNERS -->
+        <!-- ================================ -->
+
+        <!-- Start TEAM -->
         <section id="index_team" class="index-team  animate__animated">
             <div class="my-container">
                 <div class="index-team__wrapper">
-                    <h2 class="index-team__wrapper__h2">
+                    <h2 class="index-team__wrapper__h2 headerH2">
                         Executive team
                     </h2>
                     <div class="index-team__wrapper__items d-flex justify-content-center flex-wrap">
@@ -3011,10 +3060,14 @@
                 <a href="" class="closeTeam"></a>
             </div>
         </section>
+        <!-- End TEAM -->
+        <!-- ================================ -->
+
+        <!-- Start JOBS -->
         <section id="jobs" class="jobs scrolling">
             <div class="my-container">
                 <div class="jobs__wrapper" data-aos-duration="1000" data-aos="fade-up" data-aos-offset="50">
-                    <h2 class="jobs__wrapper__h2">
+                    <h2 class="jobs__wrapper__h2 headerH2">
                         Work with us
                     </h2>
                     <div class="jobs__wrapper__items d-flex justify-content-between">
@@ -3046,6 +3099,10 @@
                 </div>
             </div>
         </section>
+        <!-- End JOBS -->
+        <!-- ================================ -->
+
+        <!-- Start ADVENTAGE -->
         <section id="advantage_article" class="advantage_article" data-aos-duration="1000" data-aos="fade-up" data-aos-offset="50">
             <div class="my-container">
                 <div class="advantage_article__wrapper d-flex justify-content-between align-items-center">
@@ -3063,11 +3120,15 @@
                 </div>
             </div>
         </section>
+        <!-- End ADVENTAGE -->
+        <!-- ================================ -->
+
+        <!-- Start NEWS -->
         <section id="news" class="news scrolling">
             <div class="my-container">
                 <div class="news__wrapper">
                     <div class="news__wrapper__header d-flex justify-content-between">
-                        <h2 class="news__wrapper__header__h2">
+                        <h2 class="news__wrapper__header__h2 headerH2">
                             Latest news
                         </h2>
                         <div class="link">
@@ -3115,22 +3176,27 @@
                 </div>
             </div>
         </section>
+        <!-- End NEWS -->
+        <!-- ================================ -->
     </main>
-    <footer id="footer" class="scrolling">
+    <!-- ========== MAIN END ========== -->
+
+    <!-- ========== FOOTER START ========== -->
+    <footer id="footer" class="indexFooter scrolling">
         <div class="my-container">
             <div class="contacts d-flex justify-content-between">
                 <div class="left-footer d-flex justify-content-between flex-column">
-                    <h2>Contacts</h2>
-                    <p>Site by
+                    <h2 class="headerH2">Contacts</h2>
+                    <p class="d-flex align-items-center">Site by
                         <span></span>
-                        <a href="">
+                        <a href="https://www.jis.az/">
                             Jeykhun Imanov Studio
                         </a>
                     </p>
                 </div>
                 <div class="right-footer d-flex justify-content-between flex-column">
                     <div class="info-us d-flex justify-content-between flex-column">
-                        <div class="links d-flex justify-content-between">
+                        <div class="links d-flex justify-content-between  align-items-center">
                             <ul>
                                 <li class="active">
                                     <a href="" id="amsterdamTab" data-tab="1">AMSTERDAM</a>
@@ -3192,6 +3258,7 @@
             </div>
         </div>
     </footer>
+    <!-- ========== FOOTER END ========== -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

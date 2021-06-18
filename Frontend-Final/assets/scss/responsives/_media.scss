@@ -1,0 +1,562 @@
+// responsive for 1280
+@media screen and (max-width: 1280px) {
+    main {
+        .partners {
+            &__table {
+                &__image {
+                    width: calc((100% - 60px) / 3);
+                }
+            }
+        }
+    }
+    footer {
+        .contacts {
+            .left-footer {
+                h2 {
+                    margin: -8px 0 0;
+                }
+            }
+            .right-footer {
+                .info-us {
+                    .links {
+                        padding: 0 0 60px;
+                        ul {
+                            li {
+                                padding: 0 20px;
+                                a {
+                                    font-size: 21px;
+                                }
+                            }
+                        }
+                    }
+                    .info_tabs {
+                        ul {
+                            li {
+                                padding: 0 0 30px;
+                                span {
+                                    padding: 0 0 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// responsive for 1180
+@media screen and (max-width:1180px) {
+    .my-container {
+        width: 95%;
+    }
+    main {
+        .index-solutions {
+            &__wrapper {
+                &__header {
+                    padding: 0 10px;
+                    &__h2 {
+                        max-width: 300px;
+                        font-size: 32px;
+                    }
+                }
+                &__list {
+                    padding: 0 10px;
+                    &__ul {
+                        li {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// responsive for 1023
+@media screen and (max-width:1023px) {
+    h2.headerH2 {
+        font-size: 32px!important;
+    }
+    #scroll {
+        display: none;
+    }
+    .nav__nav-list {
+        display: none!important;
+    }
+    .nav__nav-burger {
+        display: flex!important;
+    }
+    .home__info {
+        h1 {
+            font-size: 32px;
+            padding-bottom: 0;
+            transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+        }
+    }
+    main {
+        .what-we-do {
+            &__wrapper {
+                &__item {
+                    width: calc(33.333% - 35px);
+                    padding: 20px 10px 15px;
+                }
+                &__image {
+                    height: 210px;
+                }
+                &__h3 {
+                    font-size: 21px;
+                }
+            }
+        }
+        .achievements {
+            padding: 35px 0 40px;
+            &__wrapper {
+                &__h2 {
+                    padding: 0 0 10px;
+                }
+                &__contents {
+                    padding: 40px 0;
+                    .texts {
+                        padding: 10px 0;
+                        h3 {
+                            font-size: 32px;
+                        }
+                    }
+                }
+            }
+        }
+        #index_world {
+            display: none!important;
+        }
+        #index_world_mobile {
+            display: block!important;
+        }
+        .partners {
+            &__table {
+                &__image {
+                    width: calc((100% - 40px) / 3);
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .index-team {
+            display: none;
+            &.fixedTeam {
+                display: block;
+                position: fixed;
+                visibility: visible;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background: #fff;
+                height: calc(100vh - 0px);
+                padding: 25px 0 60px;
+                z-index: 4;
+                overflow-y: scroll;
+                .index-team__wrapper {
+                    &__h2 {
+                        padding: 0 0 20px;
+                    }
+                    &__items {
+                        .content-item {
+                            width: calc(25% - 20px);
+                            margin: 0 10px 48px;
+                            .image {
+                                height: 30vw;
+                            }
+                            &:nth-child(1),
+                            &:nth-child(5) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .closeTeam {
+                display: block;
+            }
+        }
+        .news {
+            padding: 35px 0 40px;
+            &__wrapper {
+                &__header {
+                    padding: 0 0 30px;
+                }
+                &__contents {
+                    .content-item {
+                        .image {
+                            margin: 0 0 15px;
+                        }
+                        h3 {
+                            padding: 0 0 24px;
+                            font-size: 16px;
+                        }
+                        span {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        padding: 30px 0 30px;
+        .contacts {
+            .left-footer {
+                h2 {
+                    margin: -10px 0 0;
+                }
+            }
+            .right-footer {
+                width: calc(100% - 240px);
+                .info-us {
+                    .links {
+                        padding: 0 0 40px;
+                        display: block!important;
+                        ul {
+                            padding-left: 0;
+                        }
+                    }
+                    .info_tabs {
+                        ul {
+                            padding-left: 0;
+                            li {
+                                padding: 0 0 20px;
+                                span {
+                                    padding: 0 0 8px;
+                                    font-size: 16px;
+                                }
+                                p {
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .copyright {
+                    padding-left: 100px;
+                }
+            }
+        }
+    }
+    // Responsive for WhatWeDo
+    header.wwdHeader {
+        height: 320px;
+        padding: 0 0 40px;
+    }
+}
+
+// responsive for 768
+@media screen and (max-width:768px) {
+    h2.headerH2 {
+        font-size: 27px!important;
+    }
+    .home__info {
+        padding: 120px 0 90px;
+        h1 {
+            font-size: 27px;
+            padding-bottom: 0;
+        }
+    }
+    .header {
+        height: auto;
+    }
+    main {
+        .what-we-do {
+            &__wrapper {
+                &__item {
+                    width: 100%;
+                    padding: 20px 20px;
+                    margin: 0 0 20px;
+                }
+            }
+        }
+        .index-solutions {
+            min-height: 1px;
+            height: auto;
+            &__wrapper {
+                flex-direction: column;
+                &__header {
+                    width: 100%;
+                    padding: 120px 0px 120px;
+                    &__h2 {
+                        font-size: 30px;
+                    }
+                }
+                &__list {
+                    width: 100%;
+                    padding: 0px;
+                    &__ul {
+                        li {
+                            text-align: center;
+                            list-style: none;
+                            color: white;
+                            font-weight: 200;
+                            font-size: 18px;
+                            line-height: 1.12;
+                            padding: 20px 0;
+                        }
+                    }
+                }
+            }
+        }
+        .achievements {
+            &__wrapper {
+                &__h2 {
+                    padding: 0 0 10px;
+                }
+                &__contents {
+                    border: none!important;
+                    padding: 0;
+                    flex-direction: column;
+                    .texts {
+                        width: 100%;
+                        padding: 20px 0;
+                        h3 {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .partners {
+            &__table {
+                &__image {
+                    width: calc((100% - 14px) / 2);
+                    margin-bottom: 11px;
+                }
+            }
+        }
+        .index-team {
+            &__wrapper {
+                &__h2 {
+                    padding: 0 0 20px!important;
+                }
+                &__items {
+                    .content-item {
+                        width: calc(50% - 20px)!important;
+                        margin: 0 10px 48px!important;
+                        .image {
+                            height: 60vw!important;
+                        }
+                    }
+                }
+            }
+        }
+        .jobs {
+            padding: 30px 0 0px;
+            &__wrapper {
+                &__h2 {
+                    padding: 0 0 20px;
+                }
+                &__items {
+                    padding: 0 0 10px;
+                    .advantage {
+                        width: calc(33.333% - 10px);
+                        padding: 0 0 30px;
+                        text-align: center;
+                        .icon {
+                            img {
+                                width: 48px;
+                            }
+                        }
+                        h3 {
+                            padding: 0 0 10px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        .advantage_article {
+            padding: 0 0 30px;
+            &__wrapper {
+                display: block!important;
+                .image {
+                    width: 100%;
+                    img {
+                        border-radius: 4px 4px 0 0;
+                    }
+                }
+                .text-content {
+                    width: 100%;
+                    padding: 20px 20px 25px;
+                    margin: 0;
+                    border-radius: 0 0 4px 4px;
+                    h3 {
+                        padding: 0 0 20px;
+                        font-size: 27px;
+                    }
+                    p {
+                        padding: 0 0 20px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .news {
+            &__wrapper {
+                &__header {
+                    padding: 0 0 20px;
+                }
+                &__contents {
+                    display: block!important;
+                    .content-item {
+                        width: 100%;
+                        padding: 0 0 30px;
+                        h3 {
+                            padding: 0 0 20px;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        position: relative;
+        padding: 20px 0 20px;
+        .contacts {
+            display: block!important;
+            .left-footer {
+                h2 {
+                    margin: -10px 0 0;
+                    padding: 0 0 20px;
+                }
+                p {
+                    position: absolute;
+                    bottom: 60px;
+                    left: 0;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            .right-footer {
+                width: 100%;
+                .info-us {
+                    .links {
+                        padding: 0 0 30px;
+                        ul {
+                            padding-left: 0;
+                        }
+                    }
+                    .info_tabs {
+                        ul {
+                            padding-left: 0;
+                            li {
+                                span {
+                                    padding: 0 0 4px;
+                                    font-size: 14px;
+                                }
+                                p {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .copyright {
+                    padding-left: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    // Responsive for WhatWeDo
+    header.wwdHeader {
+        height: 270px;
+        padding: 0 0 30px;
+    }
+}
+
+// responsive for 574
+@media screen and (max-width: 574px) {
+    main {
+        .what-we-do {
+            &__h2 {
+                padding: 0 0 10px;
+            }
+            &__link {
+                justify-content: flex-start!important;
+            }
+        }
+        .index-world-mobile {
+            &__wrapper {
+                &__country {
+                    .country-list {
+                        p {
+                            width: calc((100% - 18px) / 2);
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// responsive for 480
+@media screen and (max-width:479px) {
+    .logo {
+        a {
+            width: 130px!important;
+            height: 45px!important;
+        }
+    }
+    h2.headerH2 {
+        font-size: 24px!important;
+    }
+    footer {
+        .contacts {
+            .right-footer {
+                .info-us {
+                    .links {
+                        padding: 0 0 30px;
+                        ul {
+                            li {
+                                padding: 0 10px;
+                                a {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                    .info_tabs {
+                        ul {
+                            li {
+                                padding: 0 0 20px;
+                                span {
+                                    padding: 0 0 4px;
+                                    font-size: 14px;
+                                }
+                                p {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Responsive for WhatWeDo
+    header.wwdHeader {
+        height: auto;
+        padding: 120px 0 30px;
+    }
+}
+
+// responsive for 800 height
+@media screen and (min-height:800px) {
+    main {
+        .news {
+            min-height: 60vh;
+        }
+    }
+    footer {
+        .contacts {
+            min-height: 60vh;
+        }
+    }
+}

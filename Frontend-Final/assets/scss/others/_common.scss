@@ -1,0 +1,83 @@
+.bground {
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    &__bgImage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        z-index: -2;
+    }
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    .nav {
+        height: 110px;
+        transition: all .3s;
+        &__logo {
+            a {
+                position: relative;
+                background-image: url('/assets/images/logo-light.svg');
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: contain;
+                display: inline-block;
+                width: 154px;
+                height: 53px;
+            }
+        }
+    }
+    &.fixed {
+        background: #fff;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+        .nav {
+            height: 80px;
+            &__logo {
+                a {
+                    background-image: url('/assets/images/logo_colored.svg');
+                }
+            }
+        }
+    }
+}
+
+.link {
+    a {
+        display: inline-block;
+        height: 56px;
+        padding: 0 100px 0 24px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 56px;
+        background: url(/assets/icons/link_orange_icon.svg) no-repeat calc(100% - 24px) 50%;
+        border-radius: 12px;
+        transition: all 0.15s linear;
+        &:hover {
+            background: url(/assets/icons/link_orange_icon.svg) no-repeat calc(100% - 20px) 50%;
+            box-shadow: inset 0 0 0 3px $color-primary!important;
+        }
+    }
+}
+
+h2.headerH2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.29;
+    letter-spacing: 0.01em;
+    color: $color-secondary;
+}
