@@ -21,7 +21,6 @@ $(document).ready(function() {
     $('.nav__nav-burger__menu').click(function() {
         $('.nav__nav-burger__menu__line.middle').toggleClass('opacity0');
         if (result) {
-            $('.aside-nav').css('z-index', '2');
             $('body').css('overflow', 'hidden');
             $('.aside-nav').css('overflow', 'scroll');
             $('.aside-nav').removeClass('d-none');
@@ -42,7 +41,10 @@ $(document).ready(function() {
             $('.nav__nav-burger__menu__line.up').addClass('upLineToUp');
             $('.nav__nav-burger__menu__line.down').removeClass('downLineToUp');
             $('.nav__nav-burger__menu__line.down').addClass('downLineToDown');
-            $('.aside-nav').css('z-index', '1');
+            setTimeout(function() {
+                $('.aside-nav').addClass('d-none');
+            }, 500);
+
             result = true;
         }
     });
@@ -50,7 +52,7 @@ $(document).ready(function() {
     //nav menu scrolls
     $('.to_what_we_do').click(function(e) {
         e.preventDefault();
-        $('.nav__nav-burger__menu__line.middle').toggleClass('opacity0');
+        $('.nav__nav-burger__menu__line.middle').removeClass('opacity0');
         $('body').css('overflow', 'visible');
         $('.aside-nav').removeClass('animate__zoomIn');
         $('.aside-nav').addClass('animate__zoomOut');
@@ -58,14 +60,21 @@ $(document).ready(function() {
         $('.nav__nav-burger__menu__line.up').addClass('upLineToUp');
         $('.nav__nav-burger__menu__line.down').removeClass('downLineToUp');
         $('.nav__nav-burger__menu__line.down').addClass('downLineToDown');
-        $('.aside-nav').css('z-index', '1');
+        setTimeout(function() {
+            $('.aside-nav').addClass('d-none');
+        }, 500);
         result = true;
-        $('html, body').animate({ scrollTop: $("#what_we_do").offset().top - 80 }, 1000);
+        if ($(window).scrollTop() > 150) {
+            $('html, body').animate({ scrollTop: $("#what_we_do").offset().top - 80 }, 1000);
+        } else {
+            $('html, body').animate({ scrollTop: $("#what_we_do").offset().top - 160 }, 1000);
+        }
+
     });
 
     $('.to_who_we_are').click(function(e) {
         e.preventDefault();
-        $('.nav__nav-burger__menu__line.middle').toggleClass('opacity0');
+        $('.nav__nav-burger__menu__line.middle').removeClass('opacity0');
         $('body').css('overflow', 'visible');
         $('.aside-nav').removeClass('animate__zoomIn');
         $('.aside-nav').addClass('animate__zoomOut');
@@ -73,22 +82,26 @@ $(document).ready(function() {
         $('.nav__nav-burger__menu__line.up').addClass('upLineToUp');
         $('.nav__nav-burger__menu__line.down').removeClass('downLineToUp');
         $('.nav__nav-burger__menu__line.down').addClass('downLineToDown');
-        $('.aside-nav').css('z-index', '1');
+        setTimeout(function() {
+            $('.aside-nav').addClass('d-none');
+        }, 500);
         result = true;
         $('html, body').animate({ scrollTop: $("#achievements").offset().top - 80 }, 1000);
     });
 
-    $('.open_team').click(function(e) {
+    $('#open_team').click(function(e) {
         e.preventDefault();
-        $('.nav__nav-burger__menu__line.middle').toggleClass('opacity0');
+        $('.nav__nav-burger__menu__line.middle').removeClass('opacity0');
         $('.aside-nav').removeClass('animate__zoomIn');
         $('.aside-nav').addClass('animate__zoomOut');
         $('.nav__nav-burger__menu__line.up').removeClass('upLineToDown');
         $('.nav__nav-burger__menu__line.up').addClass('upLineToUp');
         $('.nav__nav-burger__menu__line.down').removeClass('downLineToUp');
         $('.nav__nav-burger__menu__line.down').addClass('downLineToDown');
-        $('.aside-nav').css('z-index', '1');
         $('body').css('overflow', 'hidden');
+        setTimeout(function() {
+            $('.aside-nav').addClass('d-none');
+        }, 500);
         result = true;
         $('#index_team').addClass('fixedTeam');
         $('#index_team').addClass('animate__fadeIn');
@@ -102,13 +115,14 @@ $(document).ready(function() {
         $('#index_team').addClass('animate__fadeOut');
         setTimeout(function() {
             $('#index_team').removeClass('fixedTeam');
+            $('#index_team').removeClass('animate__fadeOut');
         }, 500);
 
     })
 
     $('.to_jobs').click(function(e) {
         e.preventDefault();
-        $('.nav__nav-burger__menu__line.middle').toggleClass('opacity0');
+        $('.nav__nav-burger__menu__line.middle').removeClass('opacity0');
         $('body').css('overflow', 'visible');
         $('.aside-nav').removeClass('animate__zoomIn');
         $('.aside-nav').addClass('animate__zoomOut');
@@ -116,14 +130,16 @@ $(document).ready(function() {
         $('.nav__nav-burger__menu__line.up').addClass('upLineToUp');
         $('.nav__nav-burger__menu__line.down').removeClass('downLineToUp');
         $('.nav__nav-burger__menu__line.down').addClass('downLineToDown');
-        $('.aside-nav').css('z-index', '1');
+        setTimeout(function() {
+            $('.aside-nav').addClass('d-none');
+        }, 500);
         result = true;
         $('html, body').animate({ scrollTop: $("#jobs").offset().top - 80 }, 1000);
     });
 
     $('.to_news').click(function(e) {
         e.preventDefault();
-        $('.nav__nav-burger__menu__line.middle').toggleClass('opacity0');
+        $('.nav__nav-burger__menu__line.middle').removeClass('opacity0');
         $('body').css('overflow', 'visible');
         $('.aside-nav').removeClass('animate__zoomIn');
         $('.aside-nav').addClass('animate__zoomOut');
@@ -131,14 +147,16 @@ $(document).ready(function() {
         $('.nav__nav-burger__menu__line.up').addClass('upLineToUp');
         $('.nav__nav-burger__menu__line.down').removeClass('downLineToUp');
         $('.nav__nav-burger__menu__line.down').addClass('downLineToDown');
-        $('.aside-nav').css('z-index', '1');
+        setTimeout(function() {
+            $('.aside-nav').addClass('d-none');
+        }, 500);
         result = true;
         $('html, body').animate({ scrollTop: $("#news").offset().top - 80 }, 1000);
     });
 
     $('.to_contacts').click(function(e) {
         e.preventDefault();
-        $('.nav__nav-burger__menu__line.middle').toggleClass('opacity0');
+        $('.nav__nav-burger__menu__line.middle').removeClass('opacity0');
         $('body').css('overflow', 'visible');
         $('.aside-nav').removeClass('animate__zoomIn');
         $('.aside-nav').addClass('animate__zoomOut');
@@ -146,28 +164,60 @@ $(document).ready(function() {
         $('.nav__nav-burger__menu__line.up').addClass('upLineToUp');
         $('.nav__nav-burger__menu__line.down').removeClass('downLineToUp');
         $('.nav__nav-burger__menu__line.down').addClass('downLineToDown');
-        $('.aside-nav').css('z-index', '1');
+        setTimeout(function() {
+            $('.aside-nav').addClass('d-none');
+        }, 500);
         result = true;
         $('html, body').animate({ scrollTop: $("#footer").offset().top - 80 }, 1000);
     });
 
     $(window).scroll(function() {
-            // console.log($('.scrolling').length);
-            $('.scrolling').each(function(index) {
-                console.log($(window).scrollTop() + " " + $(this).offset().top);
-                if ($(window).scrollTop() == $(this).offset().top) {
-                    console.log($(window).scrollTop() + " " + $(this).offset().top);
-                }
-            });
-            for (let i = 0; i < $('.scrolling').length; i++) {
+            let wd = $(window).scrollTop() + 80;
+            let whatWeDo = $('.scrolling').eq(0).offset().top;
+            let whoWeAre = $('.scrolling').eq(1).offset().top;
+            let jobs = $('.scrolling').eq(2).offset().top;
+            let news = $('.scrolling').eq(3).offset().top;
+            let contacts = $('.scrolling').eq(4).offset().top;
 
+            if (wd >= whatWeDo && wd < whoWeAre) {
+                $('.to_what_we_do').addClass('active');
+            } else {
+                $('.to_what_we_do').removeClass('active');
             }
 
+            if (wd >= whoWeAre && wd < jobs) {
+                $('.to_who_we_are').addClass('active');
+            } else {
+                $('.to_who_we_are').removeClass('active');
+            }
+
+            if (wd >= jobs && wd < news - 1) {
+                $('.to_jobs').addClass('active');
+            } else {
+                $('.to_jobs').removeClass('active');
+            }
+
+            if (wd >= news && wd < contacts) {
+                $('.to_news').addClass('active');
+            } else {
+                $('.to_news').removeClass('active');
+            }
+
+            if ((wd - 80 + $(window).height()) == $(document).height()) {
+                $('.to_contacts').addClass('active');
+                $('.to_news').removeClass('active');
+            } else {
+                $('.to_contacts').removeClass('active');
+            }
         })
         //scroll icon
     $('.scroll-down').click(function(e) {
         e.preventDefault();
-        $('html, body').animate({ scrollTop: $("#what_we_do").offset().top - 80 }, 1000);
+        if ($(window).scrollTop() > 150) {
+            $('html, body').animate({ scrollTop: $("#what_we_do").offset().top - 80 }, 1000);
+        } else {
+            $('html, body').animate({ scrollTop: $("#what_we_do").offset().top - 160 }, 1000);
+        }
     })
 
     //counter
