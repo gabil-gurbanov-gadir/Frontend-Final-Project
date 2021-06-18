@@ -342,4 +342,13 @@ $(document).ready(function() {
         $("[data-city=" + _this_country + "]").eq(3).attr("fill", $("[data-city=" + _this_country + "]").eq(3).data("fill"));
         $(".flying_country").removeClass("show_me");
     });
+
+    $('#footer .links li a').click(function(e) {
+        e.preventDefault();
+        $('#footer .links li').removeClass('active');
+        $(this).parent().addClass('active');
+        $('#footer .info_tabs ul').removeClass('active');
+        $(`#footer .info_tabs ul[data-tab='${$(this).attr('data-tab')}'`).addClass('active');
+
+    })
 });
