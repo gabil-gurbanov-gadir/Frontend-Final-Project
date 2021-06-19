@@ -4,7 +4,7 @@
         .partners {
             &__table {
                 &__image {
-                    width: calc((100% - 60px) / 3);
+                    width: calc((100% - 60px) / 3)!important;
                 }
             }
         }
@@ -13,18 +13,18 @@
         .contacts {
             .left-footer {
                 h2 {
-                    margin: -8px 0 0;
+                    margin: -8px 0 0!important;
                 }
             }
             .right-footer {
                 .info-us {
                     .links {
-                        padding: 0 0 60px;
+                        padding: 0 0 60px!important;
                         ul {
                             li {
-                                padding: 0 20px;
+                                padding: 0 20px!important;
                                 a {
-                                    font-size: 21px;
+                                    font-size: 21px!important;
                                 }
                             }
                         }
@@ -32,9 +32,9 @@
                     .info_tabs {
                         ul {
                             li {
-                                padding: 0 0 30px;
+                                padding: 0 0 30px!important;
                                 span {
-                                    padding: 0 0 8px;
+                                    padding: 0 0 8px!important;
                                 }
                             }
                         }
@@ -48,23 +48,26 @@
 // responsive for 1180
 @media screen and (max-width:1180px) {
     .my-container {
-        width: 95%;
+        width: 95%!important;
+    }
+    .container-simbrella {
+        width: 95%!important;
     }
     main {
         .index-solutions {
             &__wrapper {
                 &__header {
-                    padding: 0 10px;
+                    padding: 0 10px!important;
                     &__h2 {
-                        max-width: 300px;
-                        font-size: 32px;
+                        max-width: 300px!important;
+                        font-size: 32px!important;
                     }
                 }
                 &__list {
-                    padding: 0 10px;
+                    padding: 0 10px!important;
                     &__ul {
                         li {
-                            font-size: 18px;
+                            font-size: 18px!important;
                         }
                     }
                 }
@@ -73,13 +76,16 @@
     }
 }
 
-// responsive for 1023
-@media screen and (max-width:1023px) {
+// responsive for 1024
+@media screen and (max-width:1024px) {
+    /*#region Common css */
     h2.headerH2 {
         font-size: 32px!important;
     }
+    /*#endregion */
+    /*#region Index css */
     #scroll {
-        display: none;
+        display: none!important;
     }
     .nav__nav-list {
         display: none!important;
@@ -89,38 +95,38 @@
     }
     .home__info {
         h1 {
-            font-size: 32px;
-            padding-bottom: 0;
-            transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+            font-size: 32px!important;
+            padding-bottom: 0!important;
+            transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1)!important;
         }
     }
     main {
         .what-we-do {
             &__wrapper {
                 &__item {
-                    width: calc(33.333% - 35px);
-                    padding: 20px 10px 15px;
+                    width: calc(33.333% - 15px)!important;
+                    padding: 20px 10px 15px!important;
                 }
                 &__image {
-                    height: 210px;
+                    height: 210px!important;
                 }
                 &__h3 {
-                    font-size: 21px;
+                    font-size: 21px!important;
                 }
             }
         }
         .achievements {
-            padding: 35px 0 40px;
+            padding: 35px 0 40px!important;
             &__wrapper {
                 &__h2 {
-                    padding: 0 0 10px;
+                    padding: 0 0 10px!important;
                 }
                 &__contents {
-                    padding: 40px 0;
+                    padding: 40px 0!important;
                     .texts {
-                        padding: 10px 0;
+                        padding: 10px 0!important;
                         h3 {
-                            font-size: 32px;
+                            font-size: 32px!important;
                         }
                     }
                 }
@@ -135,65 +141,65 @@
         .partners {
             &__table {
                 &__image {
-                    width: calc((100% - 40px) / 3);
-                    margin-bottom: 20px;
+                    width: calc((100% - 40px) / 3)!important;
+                    margin-bottom: 20px!important;
                 }
             }
         }
         .index-team {
-            display: none;
+            display: none!important;
             &.fixedTeam {
-                display: block;
-                position: fixed;
-                visibility: visible;
-                top: 0;
-                left: 0;
-                width: 100%;
-                background: #fff;
-                height: calc(100vh - 0px);
-                padding: 25px 0 60px;
-                z-index: 4;
-                overflow-y: scroll;
+                display: block!important;
+                position: fixed!important;
+                visibility: visible!important;
+                top: 0!important;
+                left: 0!important;
+                width: 100%!important;
+                background: #fff!important;
+                height: calc(100vh - 0px)!important;
+                padding: 25px 0 60px!important;
+                z-index: 4!important;
+                overflow-y: scroll!important;
                 .index-team__wrapper {
                     &__h2 {
-                        padding: 0 0 20px;
+                        padding: 0 0 20px!important;
                     }
                     &__items {
                         .content-item {
-                            width: calc(25% - 20px);
-                            margin: 0 10px 48px;
+                            width: calc(25% - 20px)!important;
+                            margin: 0 10px 48px!important;
                             .image {
-                                height: 30vw;
+                                height: 30vw!important;
                             }
                             &:nth-child(1),
                             &:nth-child(5) {
-                                display: none;
+                                display: none!important;
                             }
                         }
                     }
                 }
             }
             .closeTeam {
-                display: block;
+                display: block!important;
             }
         }
         .news {
-            padding: 35px 0 40px;
+            padding: 35px 0 40px!important;
             &__wrapper {
                 &__header {
-                    padding: 0 0 30px;
+                    padding: 0 0 30px!important;
                 }
                 &__contents {
                     .content-item {
                         .image {
-                            margin: 0 0 15px;
+                            margin: 0 0 15px!important;
                         }
                         h3 {
-                            padding: 0 0 24px;
-                            font-size: 16px;
+                            padding: 0 0 24px!important;
+                            font-size: 16px!important;
                         }
                         span {
-                            font-size: 16px;
+                            font-size: 16px!important;
                         }
                     }
                 }
@@ -201,101 +207,122 @@
         }
     }
     footer {
-        padding: 30px 0 30px;
+        padding: 30px 0 30px!important;
         .contacts {
             .left-footer {
                 h2 {
-                    margin: -10px 0 0;
+                    margin: -10px 0 0!important;
                 }
             }
             .right-footer {
-                width: calc(100% - 240px);
+                width: calc(100% - 240px)!important;
                 .info-us {
                     .links {
-                        padding: 0 0 40px;
+                        padding: 0 0 40px!important;
                         display: block!important;
                         ul {
-                            padding-left: 0;
+                            padding-left: 0!important;
+                            padding-bottom: 10px!important;
                         }
                     }
                     .info_tabs {
                         ul {
-                            padding-left: 0;
+                            padding-left: 0!important;
                             li {
-                                padding: 0 0 20px;
+                                padding: 0 0 20px!important;
                                 span {
-                                    padding: 0 0 8px;
-                                    font-size: 16px;
+                                    padding: 0 0 8px!important;
+                                    font-size: 16px!important;
                                 }
                                 p {
-                                    font-size: 18px;
+                                    font-size: 18px!important;
                                 }
                             }
                         }
                     }
                 }
                 .copyright {
-                    padding-left: 100px;
+                    padding-left: 100px!important;
                 }
             }
         }
     }
+    /*#endregion */
     // Responsive for WhatWeDo
+    /*#region What We Do css */
     header.wwdHeader {
         height: 320px;
         padding: 0 0 40px;
     }
+    main {
+        .articles {
+            .article {
+                padding: 40px 0;
+                .wwd_wrapper {
+                    display: block!important;
+                    &__image {
+                        width: 100%;
+                    }
+                    &__list {
+                        width: 100%;
+                        padding: 30px 0 0;
+                    }
+                }
+            }
+        }
+    }
+    /*#endregion */
 }
 
-// responsive for 768
-@media screen and (max-width:768px) {
+// responsive for 767
+@media screen and (max-width:767px) {
     h2.headerH2 {
         font-size: 27px!important;
     }
     .home__info {
-        padding: 120px 0 90px;
+        padding: 120px 0 90px!important;
         h1 {
-            font-size: 27px;
-            padding-bottom: 0;
+            font-size: 27px!important;
+            padding-bottom: 0!important;
         }
     }
     .header {
-        height: auto;
+        height: auto!important;
     }
     main {
         .what-we-do {
             &__wrapper {
                 &__item {
-                    width: 100%;
-                    padding: 20px 20px;
-                    margin: 0 0 20px;
+                    width: 100%!important;
+                    padding: 20px 20px!important;
+                    margin: 0 0 20px!important;
                 }
             }
         }
         .index-solutions {
-            min-height: 1px;
-            height: auto;
+            min-height: 1px!important;
+            height: auto!important;
             &__wrapper {
-                flex-direction: column;
+                flex-direction: column!important;
                 &__header {
-                    width: 100%;
-                    padding: 120px 0px 120px;
+                    width: 100%!important;
+                    padding: 120px 0px 120px!important;
                     &__h2 {
-                        font-size: 30px;
+                        font-size: 30px!important;
                     }
                 }
                 &__list {
-                    width: 100%;
-                    padding: 0px;
+                    width: 100%!important;
+                    padding: 0px!important;
                     &__ul {
                         li {
-                            text-align: center;
-                            list-style: none;
-                            color: white;
-                            font-weight: 200;
-                            font-size: 18px;
-                            line-height: 1.12;
-                            padding: 20px 0;
+                            text-align: center!important;
+                            list-style: none!important;
+                            color: white!important;
+                            font-weight: 200!important;
+                            font-size: 18px!important;
+                            line-height: 1.12!important;
+                            padding: 20px 0!important;
                         }
                     }
                 }
@@ -304,17 +331,17 @@
         .achievements {
             &__wrapper {
                 &__h2 {
-                    padding: 0 0 10px;
+                    padding: 0 0 10px!important;
                 }
                 &__contents {
                     border: none!important;
-                    padding: 0;
-                    flex-direction: column;
+                    padding: 0!important;
+                    flex-direction: column!important;
                     .texts {
-                        width: 100%;
-                        padding: 20px 0;
+                        width: 100%!important;
+                        padding: 20px 0!important;
                         h3 {
-                            margin: 0;
+                            margin: 0!important;
                         }
                     }
                 }
@@ -323,8 +350,8 @@
         .partners {
             &__table {
                 &__image {
-                    width: calc((100% - 14px) / 2);
-                    margin-bottom: 11px;
+                    width: calc((100% - 14px) / 2)!important;
+                    margin-bottom: 11px!important;
                 }
             }
         }
@@ -345,52 +372,52 @@
             }
         }
         .jobs {
-            padding: 30px 0 0px;
+            padding: 30px 0 0px!important;
             &__wrapper {
                 &__h2 {
-                    padding: 0 0 20px;
+                    padding: 0 0 20px!important;
                 }
                 &__items {
-                    padding: 0 0 10px;
+                    padding: 0 0 10px!important;
                     .advantage {
-                        width: calc(33.333% - 10px);
-                        padding: 0 0 30px;
-                        text-align: center;
+                        width: calc(33.333% - 10px)!important;
+                        padding: 0 0 30px!important;
+                        text-align: center!important;
                         .icon {
                             img {
-                                width: 48px;
+                                width: 48px!important;
                             }
                         }
                         h3 {
-                            padding: 0 0 10px;
-                            font-size: 16px;
+                            padding: 0 0 10px!important;
+                            font-size: 16px!important;
                         }
                     }
                 }
             }
         }
         .advantage_article {
-            padding: 0 0 30px;
+            padding: 0 0 30px!important;
             &__wrapper {
                 display: block!important;
                 .image {
-                    width: 100%;
+                    width: 100%!important;
                     img {
-                        border-radius: 4px 4px 0 0;
+                        border-radius: 4px 4px 0 0!important;
                     }
                 }
                 .text-content {
-                    width: 100%;
-                    padding: 20px 20px 25px;
-                    margin: 0;
-                    border-radius: 0 0 4px 4px;
+                    width: 100%!important;
+                    padding: 20px 20px 25px!important;
+                    margin: 0!important;
+                    border-radius: 0 0 4px 4px!important;
                     h3 {
-                        padding: 0 0 20px;
-                        font-size: 27px;
+                        padding: 0 0 20px!important;
+                        font-size: 27px!important;
                     }
                     p {
-                        padding: 0 0 20px;
-                        font-size: 16px;
+                        padding: 0 0 20px!important;
+                        font-size: 16px!important;
                     }
                 }
             }
@@ -398,16 +425,16 @@
         .news {
             &__wrapper {
                 &__header {
-                    padding: 0 0 20px;
+                    padding: 0 0 20px!important;
                 }
                 &__contents {
                     display: block!important;
                     .content-item {
-                        width: 100%;
-                        padding: 0 0 30px;
+                        width: 100%!important;
+                        padding: 0 0 30px!important;
                         h3 {
-                            padding: 0 0 20px;
-                            font-size: 18px;
+                            padding: 0 0 20px!important;
+                            font-size: 18px!important;
                         }
                     }
                 }
@@ -415,67 +442,80 @@
         }
     }
     footer {
-        position: relative;
-        padding: 20px 0 20px;
+        position: relative!important;
+        padding: 20px 0 20px!important;
         .contacts {
             display: block!important;
             .left-footer {
                 h2 {
-                    margin: -10px 0 0;
-                    padding: 0 0 20px;
+                    margin: -10px 0 0!important;
+                    padding: 0 0 20px!important;
                 }
                 p {
-                    position: absolute;
-                    bottom: 60px;
-                    left: 0;
-                    width: 100%;
-                    text-align: center;
+                    position: absolute!important;
+                    bottom: 60px!important;
+                    left: calc(100% / 2 - 105px)!important;
+                    text-align: center!important;
                 }
             }
             .right-footer {
-                width: 100%;
+                width: 100%!important;
                 .info-us {
                     .links {
-                        padding: 0 0 30px;
+                        padding: 0 0 30px!important;
                         ul {
-                            padding-left: 0;
+                            padding-left: 0!important;
                         }
                     }
                     .info_tabs {
                         ul {
-                            padding-left: 0;
+                            padding-left: 0!important;
                             li {
                                 span {
-                                    padding: 0 0 4px;
-                                    font-size: 14px;
+                                    padding: 0 0 4px!important;
+                                    font-size: 14px!important;
                                 }
                                 p {
-                                    font-size: 16px;
+                                    font-size: 16px!important;
                                 }
                             }
                         }
                     }
                 }
                 .copyright {
-                    padding-left: 0;
-                    text-align: center;
+                    padding-left: 0!important;
+                    text-align: center!important;
                 }
             }
         }
     }
     // Responsive for WhatWeDo
     header.wwdHeader {
-        height: 270px;
-        padding: 0 0 30px;
+        height: 270px!important;
+        padding: 0 0 30px!important;
+    }
+    footer {
+        .simpleFooter {
+            display: block;
+            text-align: center;
+            .jis {
+                justify-content: center;
+            }
+            .copyright {
+                width: 100%;
+                padding: 10px 0 0;
+                font-size: 14px;
+            }
+        }
     }
 }
 
-// responsive for 574
-@media screen and (max-width: 574px) {
+// responsive for 575
+@media screen and (max-width: 575px) {
     main {
         .what-we-do {
             &__h2 {
-                padding: 0 0 10px;
+                padding: 0 0 10px!important;
             }
             &__link {
                 justify-content: flex-start!important;
@@ -486,8 +526,8 @@
                 &__country {
                     .country-list {
                         p {
-                            width: calc((100% - 18px) / 2);
-                            font-size: 14px;
+                            width: calc((100% - 18px) / 2)!important;
+                            font-size: 14px!important;
                         }
                     }
                 }
@@ -497,7 +537,7 @@
 }
 
 // responsive for 480
-@media screen and (max-width:479px) {
+@media screen and (max-width:480px) {
     .logo {
         a {
             width: 130px!important;
@@ -512,12 +552,12 @@
             .right-footer {
                 .info-us {
                     .links {
-                        padding: 0 0 30px;
+                        padding: 0 0 30px!important;
                         ul {
                             li {
-                                padding: 0 10px;
+                                padding: 0 10px!important;
                                 a {
-                                    font-size: 16px;
+                                    font-size: 16px!important;
                                 }
                             }
                         }
@@ -525,13 +565,13 @@
                     .info_tabs {
                         ul {
                             li {
-                                padding: 0 0 20px;
+                                padding: 0 0 20px!important;
                                 span {
-                                    padding: 0 0 4px;
-                                    font-size: 14px;
+                                    padding: 0 0 4px!important;
+                                    font-size: 14px!important;
                                 }
                                 p {
-                                    font-size: 16px;
+                                    font-size: 16px!important;
                                 }
                             }
                         }
@@ -542,8 +582,24 @@
     }
     // Responsive for WhatWeDo
     header.wwdHeader {
-        height: auto;
-        padding: 120px 0 30px;
+        height: auto!important;
+        padding: 120px 0 30px!important;
+    }
+    main {
+        .articles {
+            .article {
+                .wwd_wrapper {
+                    &__list {
+                        ul {
+                            font-size: 16px;
+                            li {
+                                margin: 0 0 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -551,12 +607,12 @@
 @media screen and (min-height:800px) {
     main {
         .news {
-            min-height: 60vh;
+            min-height: 60vh!important;
         }
     }
     footer {
         .contacts {
-            min-height: 60vh;
+            min-height: 60vh!important;
         }
     }
 }

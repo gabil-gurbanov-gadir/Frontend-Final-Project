@@ -2,11 +2,19 @@
     font-family: 'fooont', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .my-container {
-    max-width: 1140px!important;
+    max-width: 1140px;
     margin: 0 auto;
+}
+
+.container-simbrella {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 ul {
