@@ -40,6 +40,11 @@
                 width: 154px;
                 height: 53px;
             }
+            &.logo_colored {
+                a {
+                    background-image: url('/assets/images/logo_colored.svg');
+                }
+            }
         }
     }
     &.fixed {
@@ -54,6 +59,19 @@
             }
         }
     }
+}
+
+h1.headerH1,
+h2.headerH2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.29;
+    letter-spacing: 0.01em;
+    color: $color-secondary;
+}
+
+.bgGray {
+    background-color: #F6F8FE;
 }
 
 .link {
@@ -74,14 +92,53 @@
     }
 }
 
-h2.headerH2 {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.29;
-    letter-spacing: 0.01em;
-    color: $color-secondary;
+footer {
+    min-height: 1px;
+    padding: 34px 0 34px;
+    background-color: #000;
 }
 
-.bgGray {
-    background-color: #F6F8FE;
+.simpleFooter {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    .jis {
+        display: flex;
+        align-items: center;
+        p {
+            padding: 0 10px 0 0;
+            font-size: 12px;
+            line-height: 2.67;
+            color: #fff;
+        }
+        a {
+            display: inline-block;
+            padding: 0 0 0 30px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 2.67;
+            color: #fff;
+            position: relative;
+            &::before {
+                content: "";
+                display: block;
+                width: 20px;
+                height: 20px;
+                background: url(/assets/images/jis_logo.svg) no-repeat 0 0;
+                position: absolute;
+                left: 0;
+                top: calc(50% - 10px);
+            }
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .copyright {
+        width: calc(100% - 360px);
+        font-size: 16px;
+        line-height: 1.5;
+        color: #999;
+    }
 }

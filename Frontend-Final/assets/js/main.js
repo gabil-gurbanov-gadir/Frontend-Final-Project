@@ -156,8 +156,13 @@ $(document).ready(function() {
         })
         //#endregion
 
-    //#region WhatWeDo taking data
-        
+    //#region From Index To WWD data
+    $('a.what-we-do__wrapper__item').click(function() {
+        localStorage.setItem('data-wwd', `${$(this).attr('data-wwd')}`);
+        window.location.href = "what-we-do.html";
+    });
+    $(window).scrollTop($(`#${localStorage.getItem('data-wwd')}`).offset().top - 80);
+    localStorage.removeItem('data-wwd');
     //#endregion
 
     //#region counter
@@ -283,14 +288,15 @@ $(document).ready(function() {
         $("[data-city=" + _this_country + "]").eq(3).attr("fill", $("[data-city=" + _this_country + "]").eq(3).data("fill"));
         $(".flying_country").removeClass("show_me");
     });
+    //#endregion
 
-    $('#footer .links li a').click(function(e) {
+    //#region Footer Tab Changer
+    $('#footer .info-us__header li a').click(function(e) {
             e.preventDefault();
-            $('#footer .links li').removeClass('active');
-            $(this).parent().addClass('active');
-            $('#footer .info_tabs ul').removeClass('active');
-            $(`#footer .info_tabs ul[data-tab='${$(this).attr('data-tab')}'`).addClass('active');
-
+            $('#footer .info-us__header li a').removeClass('active');
+            $(this).addClass('active');
+            $('#footer .info-us__tabs ul').removeClass('active');
+            $(`#footer .info-us__tabs ul[data-tab='${$(this).attr('data-tab')}'`).addClass('active');
         })
         //#endregion
 

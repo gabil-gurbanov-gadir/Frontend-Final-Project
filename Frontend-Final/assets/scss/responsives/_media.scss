@@ -1,40 +1,36 @@
 // responsive for 1280
 @media screen and (max-width: 1280px) {
+    /*#region for Index*/
     main {
         .partners {
             &__table {
                 &__image {
-                    width: calc((100% - 60px) / 3)!important;
+                    width: calc((100% - 60px) / 3);
                 }
             }
         }
     }
-    footer {
-        .contacts {
-            .left-footer {
+    footer.indexFooter {
+        .footer {
+            .contacts_footer {
                 h2 {
-                    margin: -8px 0 0!important;
+                    margin: -8px 0 0;
                 }
-            }
-            .right-footer {
                 .info-us {
-                    .links {
-                        padding: 0 0 60px!important;
+                    &__header {
+                        padding: 0 0 60px;
                         ul {
                             li {
-                                padding: 0 20px!important;
-                                a {
-                                    font-size: 21px!important;
-                                }
+                                padding: 0 20px;
                             }
                         }
                     }
-                    .info_tabs {
+                    &__tabs {
                         ul {
                             li {
-                                padding: 0 0 30px!important;
+                                padding: 0 0 30px;
                                 span {
-                                    padding: 0 0 8px!important;
+                                    padding: 0 0 8px;
                                 }
                             }
                         }
@@ -43,97 +39,110 @@
             }
         }
     }
+    /*#endregion */
 }
 
 // responsive for 1180
 @media screen and (max-width:1180px) {
-    .my-container {
-        width: 95%!important;
-    }
-    .container-simbrella {
-        width: 95%!important;
-    }
+    /*#region for Index*/
     main {
         .index-solutions {
             &__wrapper {
                 &__header {
-                    padding: 0 10px!important;
+                    padding: 0 10px;
                     &__h2 {
-                        max-width: 300px!important;
-                        font-size: 32px!important;
+                        max-width: 300px;
+                        font-size: 32px;
                     }
                 }
                 &__list {
-                    padding: 0 10px!important;
+                    padding: 0 10px;
                     &__ul {
                         li {
-                            font-size: 18px!important;
+                            font-size: 18px;
                         }
                     }
                 }
             }
         }
     }
+    /*#endregion */
 }
 
 // responsive for 1024
 @media screen and (max-width:1024px) {
     /*#region Common css */
     h2.headerH2 {
-        font-size: 32px!important;
+        font-size: 32px;
     }
     /*#endregion */
+    ////////////////////////////
     /*#region Index css */
-    #scroll {
-        display: none!important;
+    section#nav {
+        .nav {
+            &__nav-list {
+                display: none;
+            }
+            &__nav-burger {
+                display: flex;
+            }
+        }
     }
-    .nav__nav-list {
-        display: none!important;
+    section#scroll {
+        display: none;
     }
-    .nav__nav-burger {
-        display: flex!important;
-    }
-    .home__info {
-        h1 {
-            font-size: 32px!important;
-            padding-bottom: 0!important;
-            transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1)!important;
+    section#index_first {
+        .home__info {
+            h1 {
+                font-size: 32px;
+                padding-bottom: 0;
+                transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+            }
         }
     }
     main {
         .what-we-do {
             &__wrapper {
                 &__item {
-                    width: calc(33.333% - 15px)!important;
-                    padding: 20px 10px 15px!important;
+                    width: calc(33.333% - 15px);
+                    padding: 20px 10px 15px;
+                    &__image {
+                        height: 210px;
+                    }
+                    &__h3 {
+                        font-size: 21px;
+                    }
                 }
-                &__image {
-                    height: 210px!important;
-                }
-                &__h3 {
-                    font-size: 21px!important;
+            }
+        }
+        .index-solutions {
+            &__wrapper {
+                &__list {
+                    &__ul {
+                        padding: 0 20px;
+                    }
                 }
             }
         }
         .achievements {
-            padding: 35px 0 40px!important;
+            padding: 35px 0 40px;
             &__wrapper {
                 &__h2 {
-                    padding: 0 0 10px!important;
+                    padding: 0 0 10px;
                 }
                 &__contents {
-                    padding: 40px 0!important;
+                    padding: 40px 0;
                     .texts {
-                        padding: 10px 0!important;
+                        padding: 10px 0;
                         h3 {
-                            font-size: 32px!important;
+                            font-size: 32px;
                         }
                     }
                 }
             }
         }
         #index_world {
-            display: none!important;
+            display: none;
         }
         #index_world_mobile {
             display: block!important;
@@ -141,114 +150,110 @@
         .partners {
             &__table {
                 &__image {
-                    width: calc((100% - 40px) / 3)!important;
-                    margin-bottom: 20px!important;
+                    width: calc((100% - 40px) / 3);
+                    margin-bottom: 20px;
                 }
             }
         }
         .index-team {
-            display: none!important;
+            display: none;
             &.fixedTeam {
-                display: block!important;
-                position: fixed!important;
-                visibility: visible!important;
-                top: 0!important;
-                left: 0!important;
-                width: 100%!important;
-                background: #fff!important;
-                height: calc(100vh - 0px)!important;
-                padding: 25px 0 60px!important;
-                z-index: 4!important;
-                overflow-y: scroll!important;
+                display: block;
+                position: fixed;
+                visibility: visible;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background: #fff;
+                height: calc(100vh - 0px);
+                padding: 25px 0 60px;
+                z-index: 4;
+                overflow-y: scroll;
                 .index-team__wrapper {
                     &__h2 {
-                        padding: 0 0 20px!important;
+                        padding: 0 0 20px;
                     }
                     &__items {
                         .content-item {
-                            width: calc(25% - 20px)!important;
-                            margin: 0 10px 48px!important;
+                            width: calc(25% - 20px);
+                            margin: 0 10px 48px;
                             .image {
-                                height: 30vw!important;
+                                height: 30vw;
                             }
                             &:nth-child(1),
                             &:nth-child(5) {
-                                display: none!important;
+                                display: none;
                             }
                         }
                     }
                 }
             }
             .closeTeam {
-                display: block!important;
+                display: block;
             }
         }
         .news {
-            padding: 35px 0 40px!important;
+            padding: 35px 0 40px;
             &__wrapper {
                 &__header {
-                    padding: 0 0 30px!important;
+                    padding: 0 0 30px;
                 }
                 &__contents {
                     .content-item {
                         .image {
-                            margin: 0 0 15px!important;
+                            margin: 0 0 15px;
                         }
                         h3 {
-                            padding: 0 0 24px!important;
-                            font-size: 16px!important;
+                            padding: 0 0 24px;
+                            font-size: 16px;
                         }
                         span {
-                            font-size: 16px!important;
+                            font-size: 16px;
                         }
                     }
                 }
             }
         }
     }
-    footer {
-        padding: 30px 0 30px!important;
-        .contacts {
-            .left-footer {
+    footer.indexFooter {
+        .footer {
+            padding: 30px 0 30px;
+            .contacts_footer {
                 h2 {
-                    margin: -10px 0 0!important;
+                    margin: -10px 0 0;
                 }
-            }
-            .right-footer {
-                width: calc(100% - 240px)!important;
                 .info-us {
-                    .links {
-                        padding: 0 0 40px!important;
-                        display: block!important;
+                    width: calc(100% - 240px);
+                    &__header {
+                        padding: 0 0 40px;
+                        display: block;
                         ul {
-                            padding-left: 0!important;
-                            padding-bottom: 10px!important;
+                            padding-bottom: 10px;
+                            li {
+                                padding: 0 20px;
+                            }
                         }
                     }
-                    .info_tabs {
+                    &__tabs {
                         ul {
-                            padding-left: 0!important;
                             li {
-                                padding: 0 0 20px!important;
+                                padding: 0 0 20px;
                                 span {
-                                    padding: 0 0 8px!important;
-                                    font-size: 16px!important;
+                                    padding: 0 0 8px;
+                                    font-size: 16px;
                                 }
                                 p {
-                                    font-size: 18px!important;
+                                    font-size: 18px;
                                 }
                             }
                         }
                     }
                 }
-                .copyright {
-                    padding-left: 100px!important;
-                }
             }
         }
     }
     /*#endregion */
-    // Responsive for WhatWeDo
+    ////////////////////////////
     /*#region What We Do css */
     header.wwdHeader {
         height: 320px;
@@ -272,57 +277,77 @@
         }
     }
     /*#endregion */
+    ////////////////////////////
+    /*#region All Vacancies css*/
+    main {
+        .vacancies_list {
+            padding: 40px 0;
+            &__wrapper {
+                &__item {
+                    width: calc((100% - 20px) / 2);
+                    margin-bottom: 20px;
+                    height: 120px;
+                    padding: 30px 20px;
+                    h3 {
+                        font-size: 21px;
+                    }
+                }
+            }
+        }
+    }
+    /*#endregion */
 }
 
 // responsive for 767
 @media screen and (max-width:767px) {
+    /*#region Common*/
     h2.headerH2 {
-        font-size: 27px!important;
+        font-size: 27px;
     }
-    .home__info {
-        padding: 120px 0 90px!important;
-        h1 {
-            font-size: 27px!important;
-            padding-bottom: 0!important;
+    /*#endregion */
+    ////////////////////////////
+    /*#region Index css*/
+    section#index_first {
+        .home__info {
+            padding: 120px 0 90px;
+            h1 {
+                font-size: 27px;
+            }
         }
     }
-    .header {
-        height: auto!important;
+    header.indexHeader {
+        height: auto;
     }
     main {
         .what-we-do {
             &__wrapper {
                 &__item {
-                    width: 100%!important;
-                    padding: 20px 20px!important;
-                    margin: 0 0 20px!important;
+                    width: 100%;
+                    padding: 20px 20px;
+                    margin: 0 0 20px;
                 }
             }
         }
         .index-solutions {
-            min-height: 1px!important;
-            height: auto!important;
+            min-height: 1px;
+            height: auto;
             &__wrapper {
-                flex-direction: column!important;
+                flex-direction: column;
+                text-align: center;
                 &__header {
-                    width: 100%!important;
-                    padding: 120px 0px 120px!important;
+                    width: 100%;
+                    padding: 120px 0px 120px;
                     &__h2 {
-                        font-size: 30px!important;
+                        font-size: 26px;
                     }
                 }
                 &__list {
-                    width: 100%!important;
-                    padding: 0px!important;
+                    width: 100%;
+                    padding: 0px;
                     &__ul {
                         li {
-                            text-align: center!important;
-                            list-style: none!important;
-                            color: white!important;
-                            font-weight: 200!important;
-                            font-size: 18px!important;
-                            line-height: 1.12!important;
-                            padding: 20px 0!important;
+                            font-weight: 200;
+                            padding: 20px 0;
                         }
                     }
                 }
@@ -330,18 +355,15 @@
         }
         .achievements {
             &__wrapper {
-                &__h2 {
-                    padding: 0 0 10px!important;
-                }
                 &__contents {
                     border: none!important;
-                    padding: 0!important;
-                    flex-direction: column!important;
+                    padding: 0;
+                    flex-direction: column;
                     .texts {
-                        width: 100%!important;
-                        padding: 20px 0!important;
+                        width: 100%;
+                        padding: 20px 0;
                         h3 {
-                            margin: 0!important;
+                            margin: 0;
                         }
                     }
                 }
@@ -350,74 +372,71 @@
         .partners {
             &__table {
                 &__image {
-                    width: calc((100% - 14px) / 2)!important;
-                    margin-bottom: 11px!important;
+                    width: calc((100% - 14px) / 2);
+                    margin-bottom: 11px;
                 }
             }
         }
         .index-team {
-            &__wrapper {
-                &__h2 {
-                    padding: 0 0 20px!important;
-                }
-                &__items {
-                    .content-item {
-                        width: calc(50% - 20px)!important;
-                        margin: 0 10px 48px!important;
-                        .image {
-                            height: 60vw!important;
+            &.fixedTeam {
+                .index-team__wrapper {
+                    &__items {
+                        .content-item {
+                            width: calc(50% - 20px);
+                            .image {
+                                height: 60vw;
+                            }
                         }
                     }
                 }
             }
         }
         .jobs {
-            padding: 30px 0 0px!important;
+            padding: 30px 0 0px;
             &__wrapper {
                 &__h2 {
-                    padding: 0 0 20px!important;
+                    padding: 0 0 20px;
                 }
                 &__items {
-                    padding: 0 0 10px!important;
+                    padding: 0 0 10px;
                     .advantage {
-                        width: calc(33.333% - 10px)!important;
-                        padding: 0 0 30px!important;
-                        text-align: center!important;
+                        width: calc(33.333% - 10px);
+                        padding: 0 0 30px;
+                        text-align: center;
                         .icon {
                             img {
-                                width: 48px!important;
+                                width: 48px;
                             }
                         }
                         h3 {
-                            padding: 0 0 10px!important;
-                            font-size: 16px!important;
+                            padding: 0 0 10px;
+                            font-size: 16px;
                         }
                     }
                 }
             }
         }
         .advantage_article {
-            padding: 0 0 30px!important;
+            padding: 0 0 30px;
             &__wrapper {
                 display: block!important;
                 .image {
-                    width: 100%!important;
+                    width: 100%;
                     img {
-                        border-radius: 4px 4px 0 0!important;
+                        border-radius: 4px 4px 0 0;
                     }
                 }
                 .text-content {
-                    width: 100%!important;
-                    padding: 20px 20px 25px!important;
-                    margin: 0!important;
-                    border-radius: 0 0 4px 4px!important;
+                    width: 100%;
+                    padding: 20px 20px 25px;
+                    margin: 0;
+                    border-radius: 0 0 4px 4px;
                     h3 {
-                        padding: 0 0 20px!important;
-                        font-size: 27px!important;
+                        padding: 0 0 20px;
+                        font-size: 27px;
                     }
                     p {
-                        padding: 0 0 20px!important;
-                        font-size: 16px!important;
+                        padding: 0 0 20px;
                     }
                 }
             }
@@ -425,71 +444,63 @@
         .news {
             &__wrapper {
                 &__header {
-                    padding: 0 0 20px!important;
+                    padding: 0 0 20px;
                 }
                 &__contents {
                     display: block!important;
                     .content-item {
-                        width: 100%!important;
-                        padding: 0 0 30px!important;
+                        width: 100%;
+                        padding: 0 0 30px;
                         h3 {
-                            padding: 0 0 20px!important;
-                            font-size: 18px!important;
+                            padding: 0 0 20px;
+                            font-size: 18px;
                         }
                     }
                 }
             }
         }
     }
-    footer {
-        position: relative!important;
-        padding: 20px 0 20px!important;
-        .contacts {
-            display: block!important;
-            .left-footer {
+    footer.indexFooter {
+        .footer {
+            padding: 20px 0 20px;
+            .contacts_footer {
+                display: block;
                 h2 {
-                    margin: -10px 0 0!important;
-                    padding: 0 0 20px!important;
+                    padding: 0 0 20px;
                 }
-                p {
-                    position: absolute!important;
-                    bottom: 60px!important;
-                    left: calc(100% / 2 - 105px)!important;
-                    text-align: center!important;
-                }
-            }
-            .right-footer {
-                width: 100%!important;
                 .info-us {
-                    .links {
-                        padding: 0 0 30px!important;
+                    width: 100%;
+                    &__header {
+                        padding: 0 0 60px;
                         ul {
-                            padding-left: 0!important;
+                            padding: 0 0 30px;
+                            li {
+                                a {
+                                    font-size: 21px;
+                                }
+                            }
                         }
                     }
-                    .info_tabs {
+                    &__tabs {
                         ul {
-                            padding-left: 0!important;
                             li {
                                 span {
-                                    padding: 0 0 4px!important;
-                                    font-size: 14px!important;
+                                    padding: 0 0 4px;
+                                    font-size: 14px;
                                 }
                                 p {
-                                    font-size: 16px!important;
+                                    font-size: 16px;
                                 }
                             }
                         }
                     }
                 }
-                .copyright {
-                    padding-left: 0!important;
-                    text-align: center!important;
-                }
             }
         }
     }
-    // Responsive for WhatWeDo
+    /*#endregion */
+    ////////////////////////////
+    /*#region What We Do css*/
     header.wwdHeader {
         height: 270px!important;
         padding: 0 0 30px!important;
@@ -508,14 +519,46 @@
             }
         }
     }
+    /*#endregion */
+    ////////////////////////////
+    /*#region All Vacancies css*/
+    header {
+        .vacancies_header {
+            &__wrapper {
+                display: block;
+                .text_contents {
+                    width: 100%;
+                }
+                .image {
+                    display: none;
+                }
+            }
+        }
+    }
+    main {
+        .vacancies_list {
+            &__wrapper {
+                display: block;
+                &__item {
+                    width: 100%;
+                    height: 90px;
+                    &:nth-child(9) {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+    /*#endregion */
 }
 
 // responsive for 575
 @media screen and (max-width: 575px) {
+    /*#region Index css*/
     main {
         .what-we-do {
             &__h2 {
-                padding: 0 0 10px!important;
+                padding: 0 0 10px;
             }
             &__link {
                 justify-content: flex-start!important;
@@ -526,18 +569,20 @@
                 &__country {
                     .country-list {
                         p {
-                            width: calc((100% - 18px) / 2)!important;
-                            font-size: 14px!important;
+                            width: calc((100% - 18px) / 2);
+                            font-size: 14px;
                         }
                     }
                 }
             }
         }
     }
+    /*#endregion */
 }
 
 // responsive for 480
 @media screen and (max-width:480px) {
+    /*#region Common css*/
     .logo {
         a {
             width: 130px!important;
@@ -545,33 +590,78 @@
         }
     }
     h2.headerH2 {
-        font-size: 24px!important;
+        font-size: 24px;
     }
-    footer {
-        .contacts {
-            .right-footer {
-                .info-us {
-                    .links {
-                        padding: 0 0 30px!important;
-                        ul {
-                            li {
-                                padding: 0 10px!important;
-                                a {
-                                    font-size: 16px!important;
-                                }
-                            }
+    /*#endregion */
+    ////////////////////////////
+    /*#region Index css*/
+    section#index_first {
+        .home__info {
+            max-width: 58%;
+            padding: 35vw 0 0px;
+            h1 {
+                font-size: 21px;
+                padding: 0 0 16px;
+            }
+        }
+    }
+    main {
+        .what-we-do {
+            padding: 30px 0;
+            &__header {
+                display: block;
+            }
+        }
+        .achievements {
+            padding: 30px 0;
+            &__wrapper {
+                text-align: center;
+                &__h2 {
+                    padding: 0 0 10px;
+                }
+                &__contents {
+                    display: block!important;
+                    .texts {
+                        h3 {
+                            padding: 0 0 6px;
+                            font-size: 27px;
+                        }
+                        p {
+                            font-size: 12px;
                         }
                     }
-                    .info_tabs {
+                }
+            }
+        }
+        .news {
+            &__wrapper {
+                &__header {
+                    .link {
+                        a {
+                            padding: 0 70px 0 24px;
+                        }
+                    }
+                }
+                &__contents {
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    footer.indexFooter {
+        .footer {
+            min-height: 1px;
+            .contacts_footer {
+                .info-us {
+                    &__header {
+                        padding: 0 0 30px;
                         ul {
                             li {
-                                padding: 0 0 20px!important;
-                                span {
-                                    padding: 0 0 4px!important;
-                                    font-size: 14px!important;
-                                }
-                                p {
-                                    font-size: 16px!important;
+                                padding: 0 10px;
+                                a {
+                                    font-size: 16px;
                                 }
                             }
                         }
@@ -580,7 +670,9 @@
             }
         }
     }
-    // Responsive for WhatWeDo
+    /*#endregion */
+    ////////////////////////////
+    /*#region What We Do css*/
     header.wwdHeader {
         height: auto!important;
         padding: 120px 0 30px!important;
@@ -601,18 +693,64 @@
             }
         }
     }
+    /*#endregion */
+    ////////////////////////////
+    /*#region All Vacancies css*/
+    header {
+        .vacancies_header {
+            &__wrapper {
+                .text-content {
+                    width: 100%;
+                    h1 {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+    main {
+        .vacancies_list {
+            padding: 20px 0;
+            &__wrapper {
+                &__item {
+                    padding: 20px 20px;
+                    h3 {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    /*#endregion */
+}
+
+// responsive for 300
+@media screen and (max-width:300px) {
+    /*#region All Vacancies css*/
+    main {
+        .vacancies_list {
+            &__wrapper {
+                &__item {
+                    height: auto;
+                }
+            }
+        }
+    }
+    /*#endregion */
 }
 
 // responsive for 800 height
 @media screen and (min-height:800px) {
+    /*#region Index css*/
     main {
         .news {
             min-height: 60vh!important;
         }
     }
-    footer {
-        .contacts {
+    footer.indexFooter {
+        .footer {
             min-height: 60vh!important;
         }
     }
+    /*#endregion */
 }
