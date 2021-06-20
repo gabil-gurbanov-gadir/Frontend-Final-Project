@@ -161,8 +161,10 @@ $(document).ready(function() {
         localStorage.setItem('data-wwd', `${$(this).attr('data-wwd')}`);
         window.location.href = "what-we-do.html";
     });
-    $(window).scrollTop($(`#${localStorage.getItem('data-wwd')}`).offset().top - 80);
-    localStorage.removeItem('data-wwd');
+    if ($(`#${localStorage.getItem('data-wwd')}`).offset()) {
+        $(window).scrollTop($(`#${localStorage.getItem('data-wwd')}`).offset().top - 80);
+        localStorage.removeItem('data-wwd');
+    }
     //#endregion
 
     //#region counter

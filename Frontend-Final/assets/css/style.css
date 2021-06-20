@@ -3233,6 +3233,23 @@ h2.headerH2 {
 .bgGray {
   background-color: #F6F8FE; }
 
+.simbrella_header {
+  height: 300px;
+  padding: 0 0 70px;
+  background-color: #0C0D26;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-image: url(/assets/images/vacancies_header_bg.svg);
+  background-size: cover; }
+  .simbrella_header .container-simbrella {
+    height: 100%; }
+  .simbrella_header__h1 {
+    display: flex;
+    align-items: flex-end;
+    height: 100%; }
+    .simbrella_header__h1 h1 {
+      color: #fff; }
+
 .link a {
   display: inline-block;
   height: 56px;
@@ -4054,6 +4071,49 @@ footer {
         text-align: center;
         transition: all 0.15s linear; }
 
+.branches {
+  padding: 100px 0; }
+  .branches__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .branches__wrapper__item {
+      background: #fff;
+      width: calc((100% - 60px) / 3);
+      height: 450px;
+      min-height: 410px;
+      padding: 40px 40px 40px;
+      border: 1px solid #E6E6E6;
+      background-repeat: no-repeat;
+      background-position: calc(100% - 40px) calc(100% - 40px);
+      border-radius: 4px;
+      margin-bottom: 30px; }
+      .branches__wrapper__item:nth-child(7), .branches__wrapper__item:nth-child(8), .branches__wrapper__item:nth-child(9) {
+        margin-bottom: 0; }
+      .branches__wrapper__item h2 {
+        padding: 0 0 32px;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 1.5;
+        letter-spacing: 0.01em;
+        color: #ff931e; }
+      .branches__wrapper__item ul li span {
+        padding: 0 0 8px;
+        font-size: 14px;
+        line-height: 1.71;
+        color: #99A3B2; }
+      .branches__wrapper__item ul li p {
+        min-height: 72px;
+        padding: 0 0 24px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #000; }
+        .branches__wrapper__item ul li p a {
+          color: #000; }
+          .branches__wrapper__item ul li p a:hover {
+            text-decoration: underline; }
+
 @keyframes upLineToDown {
   0% {
     top: 0; }
@@ -4125,8 +4185,12 @@ footer {
 
 @media screen and (max-width: 1024px) {
   /*#region Common css */
+  h1.headerH1,
   h2.headerH2 {
     font-size: 32px; }
+  header .simbrella_header {
+    height: 320px;
+    padding: 0 0 40px; }
   /*#endregion */
   /*#region Index css */
   section#nav .nav__nav-list {
@@ -4246,12 +4310,26 @@ footer {
       padding: 30px 20px; }
       main .vacancies_list__wrapper__item h3 {
         font-size: 21px; }
+  /*#endregion */
+  /*#region Braanches */
+  main .branches {
+    padding: 40px 0 40px; }
+    main .branches__wrapper__item {
+      width: calc((100% - 20px) / 2);
+      height: 425px;
+      margin-bottom: 20px; }
+      main .branches__wrapper__item:nth-child(8), main .branches__wrapper__item:nth-child(9) {
+        margin-bottom: 0; }
   /*#endregion */ }
 
 @media screen and (max-width: 767px) {
   /*#region Common*/
+  h1.headerH1,
   h2.headerH2 {
     font-size: 27px; }
+  header .simbrella_header {
+    height: 270px;
+    padding: 0 0 30px; }
   /*#endregion */
   /*#region Index css*/
   section#index_first .home__info {
@@ -4388,6 +4466,22 @@ footer {
       height: 90px; }
       main .vacancies_list__wrapper__item:nth-child(9) {
         margin-bottom: 20px; }
+  /*#endregion */
+  /*#region Braanches */
+  main .branches {
+    padding: 30px 0 40px; }
+    main .branches__wrapper {
+      display: block; }
+      main .branches__wrapper__item {
+        width: 100%;
+        height: 360px;
+        margin-bottom: 20px;
+        min-height: 1px;
+        padding: 30px 30px 100px; }
+        main .branches__wrapper__item:nth-child(9) {
+          margin-bottom: 0; }
+        main .branches__wrapper__item h2 {
+          font-size: 27px; }
   /*#endregion */ }
 
 @media screen and (max-width: 575px) {
@@ -4406,8 +4500,16 @@ footer {
   .logo a {
     width: 130px !important;
     height: 45px !important; }
+  h1.headerH1,
   h2.headerH2 {
     font-size: 24px; }
+  header .simbrella_header {
+    height: auto;
+    padding: 120px 0 30px; }
+    header .simbrella_header__h1 {
+      display: block; }
+      header .simbrella_header__h1 h1 {
+        padding: 0 0 20px; }
   /*#endregion */
   /*#region Index css*/
   section#index_first .home__info {
@@ -4466,6 +4568,10 @@ footer {
       padding: 20px 20px; }
       main .vacancies_list__wrapper__item h3 {
         font-size: 18px; }
+  /*#endregion */
+  /*#region Braanches */
+  main .branches__wrapper__item {
+    padding: 20px 20px 100px; }
   /*#endregion */ }
 
 @media screen and (max-width: 300px) {

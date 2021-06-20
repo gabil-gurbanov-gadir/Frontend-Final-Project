@@ -74,6 +74,27 @@ h2.headerH2 {
     background-color: #F6F8FE;
 }
 
+.simbrella_header {
+    height: 300px;
+    padding: 0 0 70px;
+    background-color: #0C0D26;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-image: url(/assets/images/vacancies_header_bg.svg);
+    background-size: cover;
+    .container-simbrella {
+        height: 100%;
+    }
+    &__h1 {
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        h1 {
+            color: #fff;
+        }
+    }
+}
+
 .link {
     a {
         display: inline-block;
