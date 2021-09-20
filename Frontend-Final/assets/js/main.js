@@ -236,7 +236,7 @@ $(document).ready(function() {
             $(".flying_country").css("top", ($("[data-city=" + _this_country + "]").position().top - $(".index-world__map__svg").offset().top - 156) + "px");
 
             $(".flying_country span").text(_country_name);
-            $(".flying_country img").attr("src", "/assets/images/flags/" + _this_country + ".png");
+            $(".flying_country img").attr("src", "assets/images/flags/" + _this_country + ".png");
 
         }
 
@@ -276,7 +276,7 @@ $(document).ready(function() {
             $(".flying_country").css("top", ($("[data-city=" + _this_country + "]").position().top - $(".index-world__map__svg").offset().top - 156) + "px");
 
             $(".flying_country span").text(_country_name);
-            $(".flying_country img").attr("src", "/assets/images/flags/" + _this_country + ".png");
+            $(".flying_country img").attr("src", "assets/images/flags/" + _this_country + ".png");
 
         }
 
